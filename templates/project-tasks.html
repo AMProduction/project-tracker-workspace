@@ -1,0 +1,27 @@
+<!--
+  ~ Copyright (c) 2023. AMProduction
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+</head>
+<body>
+<h1>Project {{ project_id }}'s Tasks</h1>
+<ul>
+    <li>Task 1</li>
+    <li>Task 2</li>
+    <li>Task 3</li>
+</ul>
+
+<h3>Add new task</h3>
+<form action="/add/task/{{ project_id }}" method="POST">
+    Task: <input name="task-name" type="text">
+    <br>
+    <br>
+    <input type="submit" value="Add Task">
+</form>
+</body>
+</html>
